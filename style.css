@@ -1,0 +1,63 @@
+/* ==========================
+   1. BODY & BACKGROUND
+========================== */
+body {
+    margin-top: 70px;
+    background: url("A_futuristic_data_engineering_concept_with_a_digit.png") no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    font-family: Arial, sans-serif;
+    position: relative;
+}
+
+/* Blur the Background */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    filter: blur(4px);
+    z-index: -1;
+}
+
+/* ==========================
+   2. NAVBAR
+========================== */
+.navbar {
+    background-color: #004080;
+}
+
+/* ==========================
+   3. PROJECT CARDS
+========================== */
+.project-card {
+    width: 250px;
+    height: 350px;
+    transition: transform 0.3s ease-in-out;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+.project-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.project-card:hover {
+    transform: scale(1.1);
+}
+
+/* ==========================
+   4. SECTION STYLING
+========================== */
+.section-container {
+    background-color: rgba(0, 64, 128, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 30px;
+}
